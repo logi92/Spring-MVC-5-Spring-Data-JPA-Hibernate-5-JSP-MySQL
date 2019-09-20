@@ -7,7 +7,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{
-                PersistenceJPAConfig.class
+                PersistenceJPAConfig.class, SecurityConfig.class
         };
     }
 
@@ -24,4 +24,6 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
                 "/"
         };
     }
+
+
 }
